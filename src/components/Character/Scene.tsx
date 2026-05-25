@@ -37,10 +37,11 @@ const Scene = () => {
       renderer.toneMappingExposure = 1;
       canvasDiv.current.appendChild(renderer.domElement);
 
+      const isMobile = window.innerWidth <= 768;
       const camera = new THREE.PerspectiveCamera(14.5, aspect, 0.1, 1000);
-      camera.position.z = 10;
-      camera.position.set(0, 13.1, 24.7);
-      camera.zoom = 1.1;
+      camera.position.set(0, 11, isMobile ? 65 : 45);
+      camera.lookAt(0, 11, 0);
+      camera.zoom = 1;
       camera.updateProjectionMatrix();
 
       let headBone: THREE.Object3D | null = null;
@@ -59,6 +60,7 @@ const Scene = () => {
           hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
           mixer = animations.mixer;
           let character = gltf.scene;
+          character.position.y = -2;
           setChar(character);
           scene.add(character);
           headBone = character.getObjectByName("spine006") || null;

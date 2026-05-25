@@ -6,9 +6,7 @@ const About = () => {
       <div className="about-me">
         <h3 className="title">About Me</h3>
         <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+          I am a Computer Science student at Dr. A. P. J. Abdul Kalam Technical University, passionate about building full-stack applications and solving complex problems. With experience in the MERN stack and a strong foundation in Data Structures and Algorithms, I strive to create efficient and user-friendly digital experiences.
         </p>
       </div>
     </div>
