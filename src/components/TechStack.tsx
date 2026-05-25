@@ -126,31 +126,27 @@ function Pointer({ vec = new THREE.Vector3(), isActive }: PointerProps) {
 
 const TechStack = () => {
   const [isActive, setIsActive] = useState(false);
+  const techRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || document.documentElement.scrollTop;
-      const threshold = document
-        .getElementById("work")!
-        .getBoundingClientRect().top;
-      setIsActive(scrollY > threshold);
-    };
-    document.querySelectorAll(".header a").forEach((elem) => {
-      const element = elem as HTMLAnchorElement;
-      element.addEventListener("click", () => {
-        const interval = setInterval(() => {
-          handleScroll();
-        }, 10);
-        setTimeout(() => {
-          clearInterval(interval);
-        }, 1000);
-      });
-    });
-    window.addEventListener("scroll", handleScroll);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsActive(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (techRef.current) {
+      observer.observe(techRef.current);
+    }
+
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (techRef.current) {
+        observer.unobserve(techRef.current);
+      }
     };
   }, []);
+
   const materials = useMemo(() => {
     return textures.map(
       (texture) =>
@@ -167,13 +163,12 @@ const TechStack = () => {
   }, []);
 
   return (
-    <div className="techstack">
-      <h2> My Techstack</h2>
-
+    <div className="techstack" id="techstack" ref={techRef}>
+      <h2>Tech Stack</h2>
       <Canvas
         shadows
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-        camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+        camera={{ position: [0, 0, 20], fov: 35, near: 1, far: 50 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
         className="tech-canvas"
       >
