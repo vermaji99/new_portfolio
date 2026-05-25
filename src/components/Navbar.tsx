@@ -1,5 +1,7 @@
 import { useEffect } from "react";
-import { gsap, ScrollTrigger, ScrollSmoother } from "gsap/all";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollSmoother } from "gsap/ScrollSmoother";
 import HoverLinks from "./HoverLinks";
 import "./styles/Navbar.css";
 
