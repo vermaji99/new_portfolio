@@ -212,9 +212,11 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.landing-h2-info-1 {
+.landing-info-h2 div {
   position: absolute;
+  left: 0;
   top: 0;
+  width: 100%;
 }
 h2.landing-info-h2 {
   color: #c481ff;
@@ -225,10 +227,6 @@ h2.landing-info-h2 {
   font-weight: 600;
   position: relative;
   margin-left: -5px;
-}
-.landing-h2-2 {
-  position: absolute;
-  top: 0;
 }
 .landing-info-h2::after {
   content: "";
@@ -243,6 +241,48 @@ h2.landing-info-h2 {
   );
   top: 0;
   left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .landing-container {
+    padding: 140px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  .landing-container h1 {
+    font-size: 42px;
+    line-height: 46px;
+    margin: 0;
+  }
+  .landing-container h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .landing-info {
+    margin: 0;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landing-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .landing-info-h2 {
+    font-size: 32px;
+    line-height: 36px;
+    width: 200px;
+    margin-left: 0;
+  }
+  .character-container {
+    height: 320px;
+    width: 100%;
+    margin-top: 10px;
+  }
 }
 @media screen and (min-width: 500px) {
   .landing-circle2 {

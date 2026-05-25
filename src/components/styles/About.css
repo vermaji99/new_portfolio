@@ -1,20 +1,18 @@
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: left;
-  place-items: center;
-  position: relative;
-  opacity: 1;
-  height: auto;
-  width: var(--cWidth);
-  margin: auto;
+  min-height: 100vh;
+  width: 100%;
+  padding: 100px 20px 50px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
+
 .about-me {
-  padding: 50px 0px;
-  padding-bottom: 0;
-  width: 500px;
-  max-width: calc(100% - 15px);
+  width: 100%;
+  max-width: 800px;
 }
+
 .about-me h3 {
   font-size: 25px;
   text-transform: uppercase;
@@ -24,25 +22,33 @@
 }
 
 .about-me p {
-  font-size: 33px;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 36px;
-  letter-spacing: 1px;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  margin: 0;
+  word-wrap: break-word;
 }
 
 @media only screen and (min-width: 600px) {
-  .about-section {
-    justify-content: center;
+  .about-me p {
+    font-size: 26px;
   }
 }
+
 @media only screen and (min-width: 768px) {
+  .about-me p {
+    font-size: 33px;
+    line-height: 36px;
+  }
   .about-me {
     width: 500px;
-    max-width: calc(100% - 70px);
-    transform: translateY(0%);
   }
-  .about-section {
-    opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-me {
+    width: 800px;
   }
 }
 @media only screen and (min-width: 1025px) {
