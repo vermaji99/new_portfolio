@@ -92,24 +92,46 @@ a.contact-social {
 }
 
 @media only screen and (max-width: 768px) {
+  .contact-section {
+    padding: 100px 20px 40px;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
   .contact-container {
-    padding-top: 80px;
-    gap: 40px;
+    padding: 0;
+    gap: 50px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
   .contact-container h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 60px;
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: visible;
+  }
+  .contact-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .contact-box h4 {
-    font-size: 16px;
-    margin-bottom: 5px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: var(--accentColor);
   }
   .contact-box p a,
   .contact-social {
-    font-size: 16px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 15px;
   }
   .contact-box:last-child h2 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 40px;
   }
 }

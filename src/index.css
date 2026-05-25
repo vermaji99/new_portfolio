@@ -84,11 +84,21 @@ body {
 .split-line {
   overflow: hidden;
 }
+@media only screen and (max-width: 768px) {
+  .split-line {
+    overflow: visible;
+  }
+}
 .split-h2 {
   overflow: hidden;
   display: flex;
   white-space: nowrap;
   flex-wrap: nowrap;
+}
+@media only screen and (max-width: 768px) {
+  .split-h2 {
+    overflow: visible;
+  }
 }
 
 .techstack {

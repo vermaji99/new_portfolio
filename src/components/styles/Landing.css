@@ -248,44 +248,63 @@ h2.landing-info-h2 {
 }
 @media only screen and (max-width: 768px) {
   .landing-container {
-    padding: 140px 20px 40px;
+    padding: 80px 20px 20px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 30px;
+    gap: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+  .landing-intro {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 20px;
   }
   .landing-container h1 {
-    font-size: 42px;
-    line-height: 46px;
-    margin: 0;
+    font-size: 48px;
+    line-height: 52px;
+    margin: 10px 0;
   }
-  .landing-container h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+  .landing-container h2 {
+    font-size: 20px;
   }
   .landing-info {
-    margin: 0;
-    height: 60px;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    transform: none;
+    margin-top: 20px;
+    height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .landing-info h3 {
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 16px;
   }
   .landing-info-h2 {
-    font-size: 32px;
-    line-height: 36px;
-    width: 200px;
-    margin-left: 0;
+    font-size: 36px !important;
+    line-height: 40px !important;
+    width: 100% !important;
+    justify-content: center;
   }
   .character-container {
-    height: 320px;
+    height: 350px;
     width: 100%;
-    margin-top: 10px;
+    position: relative;
+    order: 2;
+  }
+  .character-model {
+    position: relative;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transform: none;
   }
 }
 @media screen and (min-width: 500px) {

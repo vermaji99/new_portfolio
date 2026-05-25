@@ -317,14 +317,20 @@
   .whatIDO {
     flex-direction: column;
     height: auto;
-    padding-top: 80px;
+    padding: 100px 20px;
+    width: 100%;
+  }
+  .what-box {
+    width: 100%;
   }
   .what-box h2 {
-    margin: 40px 0;
-    font-size: 40px;
-    line-height: 42px;
+    margin: 20px 0 40px;
+    font-size: 50px;
+    line-height: 55px;
     text-align: center;
     margin-right: 0;
+    width: 100%;
+    overflow: visible;
   }
   .what-box:first-child {
     justify-content: center;
@@ -341,31 +347,24 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0;
   }
   .what-content {
     width: 100%;
-    min-height: 120px;
+    min-height: auto;
     height: auto;
-    padding: 30px;
+    padding: 30px 20px;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(255, 255, 255, 0.03);
     border-radius: 10px;
     margin-bottom: 10px;
     cursor: pointer;
   }
-  .what-content h5,
-  .what-content-flex {
-    opacity: 0;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.4s ease;
-  }
   .what-content-active {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
+}
   .what-content-active h5,
   .what-content-active .what-content-flex {
     opacity: 1;
