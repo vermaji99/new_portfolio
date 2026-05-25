@@ -187,15 +187,17 @@
 }
 @media only screen and (max-width: 600px) {
   .career-section {
-    padding: 100px 20px 40px;
+    padding: 80px 20px;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    height: auto;
+    min-height: 100vh;
   }
   .career-section h2 {
-    font-size: 45px;
-    line-height: 50px;
-    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 50px;
     text-align: center;
     width: 100%;
     overflow: visible;
@@ -203,36 +205,43 @@
   .career-info {
     width: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
   }
   .career-info-box {
-    margin-bottom: 40px;
+    margin-bottom: 0;
     padding: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
   }
   .career-info-in {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 15px;
+    gap: 10px;
   }
   .career-role h4 {
-    font-size: 24px;
-    line-height: 28px;
-    color: #fff;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--accentColor);
   }
   .career-role h5 {
     font-size: 16px;
-    color: var(--cSecondary);
+    color: #fff;
+    margin-top: 5px;
   }
   .career-info h3 {
-    font-size: 32px;
+    font-size: 36px;
     margin: 10px 0;
+    opacity: 0.3;
   }
   .career-info-box p {
-    font-size: 15px;
-    line-height: 22px;
-    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 15px;
     padding: 0;
     text-align: center;
+    color: #ccc;
   }
 }

@@ -93,22 +93,25 @@ a.contact-social {
 
 @media only screen and (max-width: 768px) {
   .contact-section {
-    padding: 100px 20px 40px;
+    padding: 80px 20px;
     height: auto;
     min-height: 100vh;
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .contact-container {
     padding: 0;
-    gap: 50px;
+    gap: 40px;
     width: 100%;
     align-items: center;
     text-align: center;
   }
   .contact-container h1 {
     font-size: 60px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     width: 100%;
     overflow: visible;
   }
@@ -119,19 +122,27 @@ a.contact-social {
     align-items: center;
   }
   .contact-box h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 14px;
+    margin-bottom: 8px;
     color: var(--accentColor);
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   .contact-box p a,
   .contact-social {
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    color: #fff;
   }
   .contact-box:last-child h2 {
-    font-size: 24px;
-    line-height: 30px;
-    margin-top: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 30px;
+    opacity: 0.8;
+  }
+  .contact-box:last-child h5 {
+    margin-top: 10px;
+    font-size: 12px;
   }
 }

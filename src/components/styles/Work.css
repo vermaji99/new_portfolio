@@ -204,74 +204,67 @@
   .work-section {
     height: auto;
     min-height: 100vh;
-    padding: 100px 20px 60px;
+    padding: 80px 20px;
     width: 100%;
-    box-sizing: border-box;
   }
   .work-container {
-    align-content: normal;
     padding: 0;
     width: 100%;
-    max-width: 100%;
+  }
+  .work-section h2 {
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 100%;
+    overflow: visible;
   }
   .work-flex {
-    height: auto;
     flex-direction: column;
-    margin: 40px 0 0;
-    padding: 0;
-    gap: 60px;
-    transform: none !important;
+    gap: 80px;
+    margin-top: 20px;
     width: 100%;
+    transform: none !important;
   }
   .work-box {
     width: 100%;
+    flex-direction: column !important;
+    gap: 20px;
     padding: 0;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 40px;
-    flex-direction: column-reverse !important;
-    gap: 25px;
-    align-items: center;
-  }
-  .work-info {
-    width: 100%;
-    text-align: center;
-  }
-  .work-title {
-    margin-bottom: 20px;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .work-title h3 {
-    font-size: 50px;
-    line-height: 50px;
-    margin: 0;
-  }
-  .work-title div h4 {
-    font-size: 24px;
-    margin: 10px 0 5px;
-  }
-  .work-info h4 {
-    font-size: 18px;
-    margin-top: 15px;
-    color: var(--accentColor);
-  }
-  .work-info p {
-    font-size: 15px;
-    line-height: 22px;
-    margin-top: 10px;
+    border: none;
+    align-items: flex-start;
   }
   .work-image {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+    border-radius: 12px;
+    overflow: hidden;
   }
-  .work-section h2 {
-    font-size: 45px;
-    text-align: center;
-    margin: 0;
+  .work-info {
     width: 100%;
-    overflow: visible;
+    text-align: left;
+  }
+  .work-title {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  .work-title h3 {
+    font-size: 40px;
+    opacity: 0.2;
+  }
+  .work-title div h4 {
+    font-size: 22px;
+    margin: 0;
+  }
+  .work-info h4 {
+    font-size: 16px;
+    color: var(--accentColor);
+    margin-top: 15px;
+  }
+  .work-info p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }

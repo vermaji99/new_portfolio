@@ -317,52 +317,62 @@
   .whatIDO {
     flex-direction: column;
     height: auto;
-    padding: 100px 20px;
+    padding: 80px 20px;
     width: 100%;
-  }
-  .what-box {
-    width: 100%;
+    justify-content: flex-start;
   }
   .what-box h2 {
-    margin: 20px 0 40px;
-    font-size: 50px;
+    margin: 0 0 50px;
+    font-size: 55px;
     line-height: 55px;
     text-align: center;
-    margin-right: 0;
     width: 100%;
     overflow: visible;
   }
-  .what-box:first-child {
-    justify-content: center;
-    width: 100%;
-  }
   .what-box:last-child {
-    height: auto;
     width: 100%;
-    max-width: 100%;
   }
   .what-box-in {
-    margin-left: 0px;
+    margin: 0;
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0;
+    gap: 30px;
+    width: 100%;
   }
   .what-content {
     width: 100%;
     min-height: auto;
-    height: auto;
-    padding: 30px 20px;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    background: rgba(255, 255, 255, 0.03);
-    border-radius: 10px;
-    margin-bottom: 10px;
-    cursor: pointer;
-  }
-  .what-content-active {
-    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 25px;
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+  }
+  .what-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--accentColor);
+  }
+  .what-content p {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.8;
+  }
+  .what-content h5,
+  .what-content-flex {
+    opacity: 1 !important;
+    height: auto !important;
+    margin-top: 15px !important;
+    display: flex !important;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .what-tags {
+    font-size: 12px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #fff;
   }
 }
   .what-content-active h5,
