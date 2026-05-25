@@ -212,11 +212,15 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.landing-info-h2-hidden {
+  display: none;
+}
 .landing-info-h2 div {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+  opacity: 0;
 }
 h2.landing-info-h2 {
   color: #c481ff;
