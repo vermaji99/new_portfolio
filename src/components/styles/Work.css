@@ -202,86 +202,95 @@
 } */
 @media only screen and (max-width: 1025px) {
   .work-section {
-    height: auto;
-    min-height: 100vh;
-    padding: 80px 20px;
+    height: 100vh;
     width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
   }
   .work-container {
-    padding: 0;
+    padding: 0 20px;
     width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .work-section h2 {
-    font-size: 55px;
+    font-size: 45px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     width: 100%;
     overflow: visible;
   }
   .work-flex {
-    flex-direction: column;
-    gap: 80px;
-    margin-top: 50px;
-    width: 100%;
-    transform: none !important;
+    flex-direction: row !important;
+    gap: 40px;
+    margin-top: 0;
+    width: max-content;
+    transform: none;
+    display: flex;
+    align-items: center;
   }
   .work-box {
-    width: 100%;
+    width: 85vw;
     flex-direction: column !important;
-    gap: 25px;
+    gap: 20px;
     padding: 0;
     border: none;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    padding-bottom: 60px;
+    border-bottom: none;
+    padding-bottom: 0;
   }
   .work-image {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     aspect-ratio: 16/9;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
   }
   .work-info {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     text-align: center;
   }
   .work-title {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
+    gap: 8px;
+    margin-bottom: 10px;
   }
   .work-title h3 {
-    font-size: 28px;
-    opacity: 0.4;
+    font-size: 24px;
+    opacity: 0.3;
     margin: 0;
   }
   .work-title div h4 {
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 26px;
     margin: 5px 0;
     color: #fff;
+    text-align: center;
   }
   .work-title div p {
-    font-size: 14px;
-    opacity: 0.6;
+    font-size: 12px;
+    opacity: 0.5;
     text-transform: uppercase;
     letter-spacing: 1px;
+    text-align: center;
   }
   .work-info h4 {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--accentColor);
-    margin-top: 20px;
+    margin-top: 15px;
     font-weight: 600;
   }
   .work-info p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 8px;
     color: #ccc;
   }
 }

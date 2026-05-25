@@ -317,23 +317,24 @@
   .whatIDO {
     flex-direction: column;
     height: auto;
-    padding: 80px 20px;
+    padding: 100px 20px;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    text-align: center;
   }
   .what-box h2 {
     margin: 0 0 40px;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 55px;
     text-align: center;
     width: 100%;
     overflow: visible;
   }
   .what-box h2 div {
-     display: block;
-     margin-top: 10px;
-   }
+    display: block;
+    margin-top: 5px;
+  }
   .what-box:last-child {
     width: 100%;
   }
@@ -344,42 +345,20 @@
     flex-direction: column;
     gap: 30px;
     width: 100%;
+    align-items: center;
   }
   .what-content {
     width: 100%;
+    max-width: 450px;
     min-height: auto;
     padding: 35px 25px;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    text-align: center;
   }
-  .what-content h3 {
-    font-size: 32px;
-    margin-bottom: 15px;
-    color: var(--accentColor);
-  }
-  .what-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    opacity: 0.9;
-    font-weight: 400;
-  }
-  .what-content h5,
   .what-content-flex {
-    opacity: 1 !important;
-    height: auto !important;
-    margin-top: 20px !important;
-    display: flex !important;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .what-tags {
-    font-size: 13px;
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    justify-content: center;
   }
 }
   .what-content-active h5,
